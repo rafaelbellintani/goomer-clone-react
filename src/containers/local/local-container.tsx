@@ -36,6 +36,28 @@ const DivStyle = styled.div`
     box-shadow: rgb(232 234 237) 0px 2px 4px;
     font-size: 16px;
     font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .select-address {
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: rgb(48, 51, 60);
+    margin-bottom: 0px;
+    font-size: 13px
+  }
+
+  .button-address {
+    max-width: 100%;
+    margin-left: 0px;
+    margin: 0px auto;
+    min-height: 60px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(48, 51, 60);
+    cursor: pointer;
   }
 `
 
@@ -56,7 +78,7 @@ const LocalContainer = () => {
         <BiMap className='icons'/>
         <span>Avenida Lygia Latuf Salomão, 605 - Jardim João Rossi, Ribeirão Preto/SP</span>
       </div>
-      <div className='align-icon'>
+      <div className='align-icon select-address button-address'>
         <RiSendPlaneLine className='icons'/>
         <span>Selecione um endereço para entrega</span>
       </div>
